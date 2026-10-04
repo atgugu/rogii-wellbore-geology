@@ -217,6 +217,21 @@ export ROGII_DATA=$PWD/data                                   # or leave it in .
 
 ## What is and is not original
 
+```mermaid
+flowchart LR
+    A["known prefix<br/>+ type-well GR"] --> B["per-well particle-filter track<br/>(public notebooks)"]
+    A --> C["pretrained learned track<br/>(third-party dataset)"]
+    B --> D["blend, weight 0.60"]
+    C --> D
+    D --> E["delta corrector"]
+    E --> F["neighbour correction<br/>(added)"]
+    F --> G["smoothing in U = TVT + Z<br/>(added)"]
+    G --> H["TVT predictions"]
+```
+
+*Simplified view of the submitted pipeline. The two upstream tracks and the blend come from the public
+notebooks; the neighbour correction and the choice to smooth in `U` were added here.*
+
 The submitted pipeline was built on the public community notebooks for this competition, which combine a
 per-well particle-filter track with a pretrained learned track from a third-party dataset. I did not
 write those parts and they are not included. What this repository contains is my own analysis of the problem and

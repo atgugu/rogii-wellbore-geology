@@ -43,11 +43,12 @@ def fig_dip_ladder():
             ("best quadratic in TVT (oracle)", d["oracle_tvt_quadratic"])]
     for name, y in refs:
         ax.axhline(y, color=MUTED, lw=1, ls=(0, (4, 3)), zorder=1)
-        ax.text(66, y * 1.03, f"{name}  {y:.2f}", ha="right", va="bottom",
-                fontsize=8.5, color=MUTED)
-    for x, y, dy in ((1, v[0], 1.12), (2, v[1], 1.18), (4, v[3], 1.18), (16, v[7], 1.25)):
-        ax.annotate(f"{y:.2f}", (x, y), (x, y * dy), ha="center", fontsize=9,
-                    color=INK)
+        below = name.startswith("best quadratic")
+        ax.text(66, y * (0.97 if below else 1.03), f"{name}  {y:.2f}", ha="right",
+                va="top" if below else "bottom", fontsize=8.5, color=MUTED)
+    for x, y in ((1, v[0]), (2, v[1]), (4, v[3]), (16, v[7])):
+        ax.annotate(f"{y:.2f}", (x, y), (x * 1.06, y * 0.86), ha="left", va="top",
+                    fontsize=9, color=INK)
     ax.set_xscale("log"); ax.set_yscale("log")
     ax.set_xticks(k); ax.set_xticklabels([str(x) for x in k])
     ax.set_yticks([0.2, 0.5, 1, 2, 5, 10, 20])
