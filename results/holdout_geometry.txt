@@ -1,0 +1,15 @@
+773 wells
+
+=== 1. PAD STRUCTURE (clustering well heels) ===
+  link radius    200 ft ->  703 pads | median size 1 mean 1.10 max 4 | 16.2% of wells share a pad with >=1 other
+  link radius    500 ft ->  417 pads | median size 1 mean 1.85 max 11 | 67.4% of wells share a pad with >=1 other
+  link radius   1000 ft ->  232 pads | median size 2 mean 3.33 max 27 | 86.8% of wells share a pad with >=1 other
+
+=== 2. SPATIAL VOIDS (occupancy over the drilled footprint) ===
+  cell  2000 ft: grid (68, 92)  occupied 1207 (19.3%)  enclosed empty cells 53
+  cell  4000 ft: grid (34, 46)  occupied 412 (26.3%)  enclosed empty cells 14
+
+=== 3. SIMULATED 20% HOLDOUT: distance from a dropped well to the nearest REMAINING well ===
+  random by well               n=155  median     411 ft  p90     1299  frac<1500ft 93.5%
+  whole pads                   n=155  median     645 ft  p90     1803  frac<1500ft 85.8%
+  one spatial block            n=230  median   31097 ft  p90    49862  frac<1500ft 0.0%

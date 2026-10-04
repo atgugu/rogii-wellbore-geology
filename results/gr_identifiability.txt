@@ -1,0 +1,4 @@
+fleet dU/dMD: sd 0.03350  q02 -0.06000  q98 0.07000
+K=1: 120 wells | truth beats  83.3% of same-complexity impostors (50% = no information) | top-decile on 42.5% of wells | median  86.5%
+K=2: 120 wells | truth beats  87.0% of same-complexity impostors (50% = no information) | top-decile on 67.5% of wells | median  95.0%
+K=4: 120 wells | truth beats  93.3% of same-complexity impostors (50% = no information) | top-decile on 83.3% of wells | median  98.5%

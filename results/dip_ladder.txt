@@ -1,0 +1,25 @@
+773 wells, 3783989 eval rows, mean eval length 4895 ft (median 4840)
+
+anchored on the well's own prefix; oracle chooses only the dips
+rung                                pooled RMSE
+------------------------------------------------
+carry_tvt                               15.9099
+flat_U                                 107.4948
+------------------------------------------------
+oracle 1 dip segment                     7.5875   (~4895 ft/segment)
+oracle 2 dip segments                    4.3235   (~2448 ft/segment)
+oracle 3 dip segments                    3.0242   (~1632 ft/segment)
+oracle 4 dip segments                    2.2522   (~1224 ft/segment)
+oracle 6 dip segments                    1.5728   (~816 ft/segment)
+oracle 8 dip segments                    1.2110   (~612 ft/segment)
+oracle 12 dip segments                   0.8107   (~408 ft/segment)
+oracle 16 dip segments                   0.6046   (~306 ft/segment)
+oracle 24 dip segments                   0.4063   (~204 ft/segment)
+oracle 32 dip segments                   0.2984   (~153 ft/segment)
+oracle 48 dip segments                   0.1946   (~102 ft/segment)
+oracle 64 dip segments                   0.1489   (~76 ft/segment)
+------------------------------------------------
+const_tvt_oracle                         9.0354
+lin_tvt_oracle                           6.6972
+quad_tvt_oracle                          5.3423
+------------------------------------------------

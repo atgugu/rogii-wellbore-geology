@@ -1,0 +1,4 @@
+submission,description,public_rmse,private_rmse
+v17,public-optimal configuration (submitted),6.236,9.250
+v18,stacked variant (submitted),6.295,9.343
+v28,conservative visible-prefix profile (not selected),7.030,8.628

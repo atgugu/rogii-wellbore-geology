@@ -1,0 +1,67 @@
+{
+  "carry_last": {
+    "pooled_rmse": 15.9099,
+    "n_rows": 3783989,
+    "n_wells": 773,
+    "well_rmse_median": 10.6651,
+    "well_rmse_p90": 22.9725,
+    "well_rmse_p95": 29.0108,
+    "worst_decile_pooled": 35.2398,
+    "long_well_pooled": 17.9615,
+    "sse_share_worst5pct": 0.3754,
+    "sse_share_worst10pct": 0.5148,
+    "mean_per_well_rmse": 12.8125
+  },
+  "constant": {
+    "pooled_rmse": 9.0354,
+    "n_rows": 3783989,
+    "n_wells": 773,
+    "well_rmse_median": 6.909,
+    "well_rmse_p90": 13.1139,
+    "well_rmse_p95": 16.1118,
+    "worst_decile_pooled": 18.2045,
+    "long_well_pooled": 9.2826,
+    "sse_share_worst5pct": 0.2728,
+    "sse_share_worst10pct": 0.398,
+    "mean_per_well_rmse": 7.8536
+  },
+  "line": {
+    "pooled_rmse": 6.6972,
+    "n_rows": 3783989,
+    "n_wells": 773,
+    "well_rmse_median": 5.3706,
+    "well_rmse_p90": 9.5963,
+    "well_rmse_p95": 11.0142,
+    "worst_decile_pooled": 12.169,
+    "long_well_pooled": 7.2956,
+    "sse_share_worst5pct": 0.2263,
+    "sse_share_worst10pct": 0.3545,
+    "mean_per_well_rmse": 5.8722
+  },
+  "quadratic": {
+    "pooled_rmse": 5.3423,
+    "n_rows": 3783989,
+    "n_wells": 773,
+    "well_rmse_median": 4.3004,
+    "well_rmse_p90": 7.4034,
+    "well_rmse_p95": 8.6422,
+    "worst_decile_pooled": 9.4745,
+    "long_well_pooled": 5.9284,
+    "sse_share_worst5pct": 0.2097,
+    "sse_share_worst10pct": 0.3385,
+    "mean_per_well_rmse": 4.6879
+  },
+  "smooth": {
+    "pooled_rmse": 3.036,
+    "n_rows": 3783989,
+    "n_wells": 773,
+    "well_rmse_median": 2.7075,
+    "well_rmse_p90": 4.2469,
+    "well_rmse_p95": 4.7999,
+    "worst_decile_pooled": 5.0876,
+    "long_well_pooled": 2.989,
+    "sse_share_worst5pct": 0.1606,
+    "sse_share_worst10pct": 0.2706,
+    "mean_per_well_rmse": 2.8548
+  }
+}

@@ -1,0 +1,36 @@
+772 wells, 3783582 eval rows
+
+=== U = U_anchor + lam*(Z - Z_anchor):  how tightly does the surface track the trajectory?
+  pooled-optimal global lambda = 0.9821
+  per-well lambda: mean 0.993  median 0.996  sd 0.203  p10 0.819  p90 1.162
+
+     lam  pooled RMSE
+    0.00     107.5006  <- flat-U
+    0.50      54.5375
+    0.90      18.1251
+    1.00      15.9107  <- carry-last-TVT
+    1.10      20.3031
+    1.25      33.0209
+    1.50      58.2480
+    2.00     111.3255
+
+  oracle per-well lambda would need a predictor of a quantity with sd 0.203 about a mean of 0.993
+
+=== lagged correlation of dU/dMD with dZ/dMD (smoothed 301 ft, inside the eval zone)
+  positive lag = trajectory rate is read AHEAD of the surface rate,
+  i.e. the FUTURE trajectory informs the CURRENT dip (steering delay)
+
+   lag (ft)     corr
+      -1500  -0.0354
+      -1000  -0.0141
+       -600   0.0236
+       -300   0.0913
+       -150   0.1578
+          0   0.2366
+        150   0.2413
+        300   0.2108
+        600   0.1421
+       1000   0.0926
+       1500   0.0152
+
+  peak |corr| = 0.2413 at lag 150 ft

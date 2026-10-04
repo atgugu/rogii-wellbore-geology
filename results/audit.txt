@@ -1,0 +1,56 @@
+loaded 773 wells in 4.3s
+{
+  "n_wells": 773,
+  "n_eval_rows_total": 3783989,
+  "violations": {
+    "prefix_gap": [],
+    "tvt_nan": [],
+    "eval_empty": [],
+    "md_step": [],
+    "tw_not_monotonic": [],
+    "tw_gr_nan": []
+  },
+  "violation_counts": {
+    "prefix_gap": 0,
+    "tvt_nan": 0,
+    "eval_empty": 0,
+    "md_step": 0,
+    "tw_not_monotonic": 0,
+    "tw_gr_nan": 0
+  },
+  "prefix_frac_quartiles": [
+    0.1248,
+    0.2245,
+    0.26,
+    0.2997,
+    0.8022
+  ],
+  "n_eval_quartiles": [
+    407.0,
+    4044.0,
+    4840.0,
+    5694.0,
+    10052.0
+  ],
+  "gr_nan_eval_quartiles": [
+    0.0067,
+    0.1308,
+    0.3029,
+    0.4977,
+    0.8118
+  ],
+  "tvt_out_of_tw_range_mean": 0.0,
+  "n_typewell_families": 752,
+  "largest_families": [
+    10,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+  ]
+}

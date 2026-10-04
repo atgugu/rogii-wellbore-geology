@@ -1,0 +1,11 @@
+# competition data and caches are never committed
+data/
+_cache/
+*.parquet
+*.npz
+runs/
+kaggle_input/
+__pycache__/
+*.pyc
+.ruff_cache/
+.venv/

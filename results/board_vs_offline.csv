@@ -1,0 +1,5 @@
+operator,setting,offline_delta_rmse,board_delta_rmse,note
+marker surface,"1.0x, ±10 ft clip",-0.457,0.333,board delta vs an unchanged rerun (6.318)
+steering dip,alpha 0.40,-0.066,0.081,board delta vs an unchanged rerun (6.318)
+steering dip,alpha 0.75,-0.104,0.091,board delta vs an unchanged rerun (6.318)
+steering dip,alpha 1.10,-0.126,0.206,board delta vs an unchanged rerun (6.318)
