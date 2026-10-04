@@ -148,12 +148,12 @@ These are the part I would most want a reader to take away.
   stack coefficients) were fitted at the incumbent configuration, so any single change breaks a calibration and
   loses by construction. A probe in such a pipeline measures calibration breakage, not the axis.
 - **A third-party component fitted on all training wells leaks, and nothing offline can see it.** The learned
-  track scored 5.6 out of fold and about 7.8 on hidden wells. Fitting the blend weight offline pushed it to a
+  track scored 5.6 out of fold and an estimated 7.8 on hidden wells. Fitting the blend weight offline pushed it to a
   negative value that looked excellent (5.45) and scored worst on the board (6.99, versus 6.42 at the
   public weight 0.60). I had inferred the component's quality from a blend that down-weighted it, so the
   measurement could not distinguish the hypotheses.
 - **Estimate noise from the ensemble, not from one pair.** The run-to-run σ of the same configuration was
-  first taken as 0.058 from a single pair and was later 0.033 from seven clean rows. A hypothesised datum-mode flip
+  first taken as 0.058 from a single pair and was later 0.033 from seven clean rows; occasional larger jumps remained unexplained. A hypothesised datum-mode flip
   was tested directly and rejected (0 in 21,120 re-weighted runs).
 - **Test any new metric on a known-positive.** A re-weighted offline metric retro-predicted two reversals and
   then called the one component known to help (a prefix calibration worth about 1 ft on the board) harmful.

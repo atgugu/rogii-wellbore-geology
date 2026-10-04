@@ -46,7 +46,7 @@ having sd 0.20 (reproduced, `scripts/05_steering_lag.py`).
 | carry last TVT | 15.910 | 02, 03 |
 | best constant / line / quadratic in TVT | 9.035 / 6.697 / 5.342 | 02 |
 | smooth low-frequency (1201 ft moving average) | 3.036 | 02 |
-| 1 / 2 / 3 / 4 dip segments | 7.588 / 4.324 / 3.024 / 2.252 | 03 |
+| 1 / 2 / 3 / 4 dip segments | 7.587 / 4.323 / 3.024 / 2.252 | 03 |
 | 6 / 8 / 12 / 16 | 1.573 / 1.211 / 0.811 / 0.605 | 03 |
 | 24 / 32 / 48 / 64 | 0.406 / 0.298 / 0.195 / 0.149 | 03 |
 
@@ -67,7 +67,7 @@ by a grouped out-of-fold retrain, since the shipped one is fitted on all trainin
   `TVT` carries an anti-correlated wiggle (`dTVT ≈ −dZ`). Smoothing `TVT` removes it; smoothing `U = TVT + Z`
   keeps it. On a deliberately noisy base the gain was 0.22 ft for `U`-smoothing against 0.06 ft for
   `TVT`-smoothing. On the final, already-smooth base the gain was about 0.02 ft offline. The window was chosen as
-  the minimum of an empirical bowl (901 rows). A moving average beat a Savitzky–Golay filter and an L1 trend filter.
+  the bottom of an empirical bowl on out-of-fold data (a few hundred rows up to 901; 901 was shipped). A moving average beat a Savitzky–Golay filter and an L1 trend filter.
 
 ## 4. Gamma ray
 

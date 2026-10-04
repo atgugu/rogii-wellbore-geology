@@ -35,7 +35,7 @@ weight.**
 |---|---|---|
 | Blend weight chosen out of fold | best offline at a *negative* weight (5.45); hidden worst (6.99 vs 6.42 at 0.60) | The learned track was fitted on all training wells, so every out-of-fold number involving it was an upper bound. |
 | Single-knob probes of the final pipeline (hedge strength, delta-corrector strength, seeds, …) | 22 of 22 probes at or above the family mean | Downstream components were calibrated at the incumbent configuration (see the README). |
-| 256 selector seeds | +0.10 | Interacts with the delta corrector, which had been fitted at the incumbent seed count. |
+| 256 selector seeds | +0.07 to +0.10, depending on the control | Interacts with the delta corrector, which had been fitted at the incumbent seed count. |
 | Seed count beyond 128 | no gain | The selector is a softmax-weighted mean, not an argmax; a datum-mode flip was never observed (0 in 21,120 runs). |
 | Outlier-well fallbacks | none beat the base | Catastrophic wells are detectable (4.1× lift in the top decile) but every fallback (flat-U, linear-U, heavy smoothing) is worse than the base even there. |
 | Blending the strongest public notebooks | no gain | Pulled and hashed 8 of the best: 40–45 of 47 cells identical; independently built engines correlated at about 0.89. |
