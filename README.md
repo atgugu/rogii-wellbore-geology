@@ -9,6 +9,15 @@ gap is a large part of what this repository is about. It collects what turned ou
 the problem, what did not survive contact with held-out data, and what I would do differently.
 
 <p align="center">
+  <a href="https://www.kaggle.com/competitions/rogii-wellbore-geology-prediction">Competition</a> ·
+  <a href="https://www.kaggle.com/competitions/rogii-wellbore-geology-prediction/data">Data</a> ·
+  <a href="https://www.kaggle.com/competitions/rogii-wellbore-geology-prediction/leaderboard">Leaderboard</a> ·
+  <a href="https://www.kaggle.com/competitions/rogii-wellbore-geology-prediction/discussion">Discussion</a> ·
+  <a href="docs/FINDINGS.md">Findings</a> ·
+  <a href="docs/NEGATIVE_RESULTS.md">Negative results</a>
+</p>
+
+<p align="center">
   <img src="figures/dip_ladder.png" width="720" alt="Pooled RMSE of an oracle that is allowed k piecewise-constant dips per well">
 </p>
 
